@@ -25,13 +25,9 @@ export class AuthService {
 
   adminData(){
   return this.http.get(this.adminURL);
-  }
+  } 
 
-  updateuser(id,data){
-    return this.http.put(`${this.userURL}`+`/${id}`,data);
-  }
-
-  updateRequestList(id,data){
+  updateUserStatus(id,data){
     return this.http.put(`${this.userURL}`+`/${id}`,data);
   }
 }

@@ -18,7 +18,8 @@ export class UserRegisterComponent implements OnInit {
     'address':new FormControl(''), 
     'id':new FormControl(''),
     'password':new FormControl(''),
-    'Cpassword':new FormControl('')
+    'friends':new FormControl(''),
+    'requests':new FormControl('')
   })
 
   public inputToken : any; 
@@ -38,11 +39,12 @@ export class UserRegisterComponent implements OnInit {
     console.log(this.imgFile);
   }
 
-
   confirm() {  
     if(this.inputToken==this.message) {
       this.register.value.src="assets/images/"+`${this.imgFile.name}`; 
       this.register.value.block=false;
+      this.register.value.friends=[];
+      this.register.value.requests=[];
       this.authService.send.next(this.register.value);
       this.authService.addUser(this.register.value).subscribe(data=>{
       this.router.navigateByUrl('userLogin');
@@ -66,3 +68,4 @@ export class UserRegisterComponent implements OnInit {
   }
 
 }
+        

@@ -26,17 +26,17 @@ export class UserDashboardComponent implements OnInit {
     this.getDetails();
   }
   
-  currentData(){
-    this.service.collect.subscribe(data=>{
+  currentData(){ 
+    this.service.collect.subscribe(data=>{ 
       this.userDetail=data;
-      this.friendList=this.userDetail.friends;
+      this.friendList=this.userDetail.friends; 
       this.requestList=this.userDetail.requests;   
     });
   }
+
   getDetails(){
     this.service.userData().subscribe(data=>{  
       this.allUserDetails=data;
-    
     })
   }
 
@@ -44,7 +44,6 @@ export class UserDashboardComponent implements OnInit {
     for(let i=0;i<this.allUserDetails.length;i++){
       if(this.searchInput.toLowerCase()==this.allUserDetails[i].name.toLowerCase() || this.searchInput.toLowerCase()==this.allUserDetails[i].email.toLowerCase()){
         this.searchedUser=this.allUserDetails[i];
-        console.log(this.searchedUser);
         this.flag=true;
       }
     }
@@ -55,17 +54,16 @@ export class UserDashboardComponent implements OnInit {
     this.requestList.splice(i,1);
     this.friendList.push(accept);
     this.userDetail.requests=this.requestList;       
-    this.service.updateRequestList(this.userDetail.id,this.userDetail).subscribe(data=>{ 
+    this.service.updateUserStatus(this.userDetail.id,this.userDetail).subscribe(data=>{ 
   })
-  for(let i=0; i<this.allUserDetails.length; i++)
-  if(this.allUserDetails[i].name==accept)
-  {
-    this.allUserDetails[i].friends.push(this.userDetail.name);
-    this.service.updateRequestList(this.allUserDetails[i].id,this.allUserDetails[i]).subscribe(data=>{
 
-    })
-  }
-  
+  for(let i=0; i<this.allUserDetails.length; i++)
+    if(this.allUserDetails[i].name==accept)
+    {
+      this.allUserDetails[i].friends.push(this.userDetail.name);
+      this.service.updateUserStatus(this.allUserDetails[i].id,this.allUserDetails[i]).subscribe(data=>{
+    }) 
+  } 
 }
 
   rejectRequest(i){
@@ -75,7 +73,7 @@ export class UserDashboardComponent implements OnInit {
   addFriend(){
       this.sendRequest.push(this.userDetail.name);
       this.searchedUser.requests=this.sendRequest; 
-      this.service.updateRequestList(this.searchedUser.id,this.searchedUser).subscribe(data=>{
+      this.service.updateUserStatus(this.searchedUser.id,this.searchedUser).subscribe(data=>{
     });
   }
 

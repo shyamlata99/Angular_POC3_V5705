@@ -12,6 +12,7 @@ export class UserLoginComponent implements OnInit {
   public email:any;
   public password:any;
   public userCredentials:any;
+  public flag=false;
 
   constructor(private service:AuthService, private router:Router) { }
   
@@ -26,6 +27,9 @@ export class UserLoginComponent implements OnInit {
           localStorage.setItem('userEmail', 'authenticate')
           this.service.send.next(this.userCredentials[i]);
           this.router.navigateByUrl('userDashboard');
+        }
+        else {
+          this.flag=true;
         }
       }
     })

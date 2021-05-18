@@ -13,6 +13,7 @@ export class AdminLoginComponent implements OnInit {
 public email:any;
 public password:any; 
 public adminCredentials:any;
+public flag=false;
 
   constructor(private router : Router, private authService:AuthService) { } 
 ngOnInit() {
@@ -23,9 +24,11 @@ adminAuth(){
     this.adminCredentials=data;
     if(this.email==this.adminCredentials.email && this.password==this.adminCredentials.password){ 
       localStorage.setItem('adminEmail', ' authenticate') 
+      this.router.navigateByUrl('adminDashboard'); 
     }
-    this.router.navigateByUrl('adminDashboard'); 
-    return false; 
+    else {
+      this.flag=true;
+    }
   })
 }
 

@@ -53,6 +53,14 @@
                   <label class="label">Confirm Password</label>
                   <input type="Password" class="form-control" placeholder="Confirm Password" formControlName="Cpassword">
                 </div>
+                <div [ngStyle]="{'display':'none'}">
+                  <label class="label">friends</label>
+                  <input type="text" class="form-control" formControlName="friends">
+                </div>
+                <div [ngStyle]="{'display':'none'}">
+                  <label class="label">requests</label>
+                  <input type="text" class="form-control" formControlName="requests">
+                </div>
                 <br>
                 <button type="submit" class="btn action btn-primary" id="btn">Register</button>
                 </form>

@@ -20,17 +20,17 @@ public userData:any;
     this.authService.userData().subscribe(data=>{
       this.userData=data;
     })
-  }
+  } 
 
   blockUser(i){
     this.userData[i].block=true;
-    this.authService.updateuser(this.userData[i].id,this.userData[i]).subscribe(data=>{
+    this.authService.updateUserStatus(this.userData[i].id,this.userData[i]).subscribe(data=>{
   });
 }
 
   unblockUser(i){
     this.userData[i].block=false;
-    this.authService.updateuser(this.userData[i].id,this.userData[i]).subscribe(data=>{ 
+    this.authService.updateUserStatus(this.userData[i].id,this.userData[i]).subscribe(data=>{ 
     }); 
   }
 

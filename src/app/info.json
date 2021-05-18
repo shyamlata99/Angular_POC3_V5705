@@ -16,11 +16,7 @@
       "friends": [
         "Shivani Chauhan",
         "Abhay Dubey",
-        "Trump",
-        "Trump",
-        "Abhay Dubey",
-        "Abhay Dubey",
-        "Abhay Dubey"
+        "Trump"
       ],
       "requests": []
     },
@@ -34,8 +30,7 @@
       "src": "assets/images/abhay.jpg",
       "block": false,
       "friends": [
-        "Shyamlata Dubey",
-        "Shivani Chauhan"
+        "Shyamlata Dubey"
       ],
       "requests": []
     },
@@ -49,7 +44,8 @@
       "src": "assets/images/astha.jpg",
       "block": false,
       "friends": [
-        "sdubey"
+        "Anushka ",
+        "Tanmay"
       ],
       "requests": []
     },
@@ -65,10 +61,7 @@
       "friends": [
         "Tanmay",
         "Abhay Dubey",
-        "Shivani Chauhan",
-        "Riya",
-        "Astha Ojha",
-        "Abhay Dubey"
+        "Astha Ojha"
       ],
       "requests": []
     },
@@ -82,21 +75,12 @@
       "src": "assets/images/boy1.jpeg",
       "block": false,
       "friends": [
-        "Abhay Dubey"
+        "Abhay Dubey",
+        "Astha Ojha"
       ],
-      "requests": []
-    },
-    {
-      "name": "souraav",
-      "email": "sourabh@mail.com",
-      "address": "dhawalgiri",
-      "id": 6,
-      "password": "sourabh",
-      "Cpassword": "sourabh",
-      "src": "assets/images/homeImg.jpg",
-      "block": false,
-      "friends": [],
-      "requests": []
+      "requests": [
+        "Abhay Dubey"
+      ]
     },
     {
       "name": "Riya",
@@ -107,20 +91,21 @@
       "Cpassword": "riya",
       "src": "assets/images/shivani.jpg",
       "block": false,
-      "requests": [
-        "Abhay Dubey"
-      ]
+      "requests": [],
+      "friends": []
     },
     {
       "name": "Trump",
-      "email": "shyamlata65@gmail.com",
+      "email": "trump@mail.com",
       "address": "USA",
       "id": 9,
       "password": "trump",
       "Cpassword": "trump",
       "src": "assets/images/3642.webp",
       "block": false,
-      "friends": [],
+      "friends": [
+        "Shyamlata Dubey"
+      ],
       "requests": []
     },
     {
@@ -132,24 +117,22 @@
       "Cpassword": "prerna",
       "src": "assets/images/Woman_1.jpg",
       "block": false,
+      "friends": [],
       "requests": [
         "Shyamlata Dubey"
       ]
     },
     {
-      "name": "",
-      "src": "assets/images/4096.webp",
-      "block": false,
-      "id": 11
-    },
-    {
-      "name": "newuser",
-      "email": "shyamlata65@gmail.com",
-      "address": "UP",
-      "id": 12,
-      "password": "newuser",
-      "Cpassword": "newuser",
-      "src": "assets/images/boy1.jpeg",
+      "name": "Anushka",
+      "email": "anushka@mail.com",
+      "address": "Lucknow",
+      "id": 11,
+      "password": "anushka",
+      "friends": [
+        "Astha Ojha"
+      ],
+      "requests": [],
+      "src": "assets/images/Woman_1.jpg",
       "block": false
     }
   ]
