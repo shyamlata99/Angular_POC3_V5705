@@ -1,0 +1,156 @@
+{
+  "admin": {
+    "email": "adminemail@mail.com",
+    "password": "adminpassword"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Shyamlata Dubey",
+      "email": "shyamlata65@gmail.com",
+      "address": "Noida",
+      "password": "shyamlata",
+      "Cpassword": "shyamlata",
+      "src": "assets/images/shyamlata.jpg",
+      "block": false,
+      "friends": [
+        "Shivani Chauhan",
+        "Abhay Dubey",
+        "Trump",
+        "Trump",
+        "Abhay Dubey",
+        "Abhay Dubey",
+        "Abhay Dubey"
+      ],
+      "requests": []
+    },
+    {
+      "id": 2,
+      "name": "Abhay Dubey",
+      "email": "abhay@mail.com",
+      "address": "Greater Noida",
+      "password": "abhay",
+      "Cpassword": "abhay",
+      "src": "assets/images/abhay.jpg",
+      "block": false,
+      "friends": [
+        "Shyamlata Dubey",
+        "Shivani Chauhan"
+      ],
+      "requests": []
+    },
+    {
+      "id": 3,
+      "name": "Astha Ojha",
+      "email": "astha@mail.com",
+      "address": "Noida",
+      "password": "astha",
+      "Cpassword": "astha",
+      "src": "assets/images/astha.jpg",
+      "block": false,
+      "friends": [
+        "sdubey"
+      ],
+      "requests": []
+    },
+    {
+      "id": 4,
+      "name": "Shivani Chauhan",
+      "email": "shivani@mail.com",
+      "address": "Greater Noida",
+      "password": "shivani",
+      "Cpassword": "shivani",
+      "src": "assets/images/shivani.jpg",
+      "block": false,
+      "friends": [
+        "Tanmay",
+        "Abhay Dubey",
+        "Shivani Chauhan",
+        "Riya",
+        "Astha Ojha",
+        "Abhay Dubey"
+      ],
+      "requests": []
+    },
+    {
+      "name": "Tanmay",
+      "email": "tanmay@mail.com",
+      "address": "Nagpur",
+      "id": 5,
+      "password": "tanmay",
+      "Cpassword": "tanmay",
+      "src": "assets/images/boy1.jpeg",
+      "block": false,
+      "friends": [
+        "Abhay Dubey"
+      ],
+      "requests": []
+    },
+    {
+      "name": "souraav",
+      "email": "sourabh@mail.com",
+      "address": "dhawalgiri",
+      "id": 6,
+      "password": "sourabh",
+      "Cpassword": "sourabh",
+      "src": "assets/images/homeImg.jpg",
+      "block": false,
+      "friends": [],
+      "requests": []
+    },
+    {
+      "name": "Riya",
+      "email": "riya@mail.com",
+      "address": "Delhi",
+      "id": 7,
+      "password": "riya",
+      "Cpassword": "riya",
+      "src": "assets/images/shivani.jpg",
+      "block": false,
+      "requests": [
+        "Abhay Dubey"
+      ]
+    },
+    {
+      "name": "Trump",
+      "email": "shyamlata65@gmail.com",
+      "address": "USA",
+      "id": 9,
+      "password": "trump",
+      "Cpassword": "trump",
+      "src": "assets/images/3642.webp",
+      "block": false,
+      "friends": [],
+      "requests": []
+    },
+    {
+      "name": "prerna",
+      "email": "abhay24rockbitz@gmail.com",
+      "address": "Mumbai",
+      "id": 10,
+      "password": "prerna",
+      "Cpassword": "prerna",
+      "src": "assets/images/Woman_1.jpg",
+      "block": false,
+      "requests": [
+        "Shyamlata Dubey"
+      ]
+    },
+    {
+      "name": "",
+      "src": "assets/images/4096.webp",
+      "block": false,
+      "id": 11
+    },
+    {
+      "name": "newuser",
+      "email": "shyamlata65@gmail.com",
+      "address": "UP",
+      "id": 12,
+      "password": "newuser",
+      "Cpassword": "newuser",
+      "src": "assets/images/boy1.jpeg",
+      "block": false
+    }
+  ]
+}

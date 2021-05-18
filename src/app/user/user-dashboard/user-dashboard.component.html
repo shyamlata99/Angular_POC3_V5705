@@ -1,0 +1,62 @@
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+     <div class="d-flex">
+        <input class="form-control  offset-2 search-bar mr-5" type="search" placeholder="Search for Friends" aria-label="Search"[(ngModel)]="searchInput">
+        <button (click)="searchedDetails()" class="btn btn-success ml-5" type="submit">Search</button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </div> 
+    </div>
+  </nav>
+<div class="container">  
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width:15rem; height:26rem;" >
+        <img src="{{userDetail.src}}" class="card-img-top" alt="...">
+        <div class="card-body" >
+          <h3 class="card-title ">{{userDetail.name}}</h3>
+            <h5>{{userDetail.email}}</h5>
+            <h5>{{userDetail.address}}</h5>  
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="col">
+      <div *ngIf="flag" class="card">
+        <img src="{{searchedUser.src}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">{{searchedUser.name}}</h3>
+          
+            <h5>{{searchedUser.email}}</h5>
+            <div >
+              <button (click)="addFriend()" class="btn btn-primary mt-3">Add Friend</button> &nbsp;
+              <button (click)="close()" class="btn btn-danger mt-3">Dismiss</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col card mt-5"  style="width:20rem;">
+      <h3 class="head-text mt-3">Friend Request</h3> <hr>
+      
+      <ul *ngFor="let item of requestList,let i=index">
+      You have a friend request from {{item}}&nbsp;&nbsp;
+          <button (click)="acceptRequest(i)" class="btn info btn-success btn-sm">Accept</button>
+          <button (click)="rejectRequest(i)" class="btn info btn-danger btn-sm">reject</button>
+      </ul>
+      </div>
+      <br><br><br><br> 
+      <div class="col card  mt-5"  style="width:20rem;">
+      <h3 class="head-text mt-3">Friend List</h3> <hr>
+      
+      <ul *ngFor="let item of friendList"> 
+        <li>{{item}}</li>
+      </ul>
+     
+    </div>
+
+    
+  </div>
+</div>
+</body>

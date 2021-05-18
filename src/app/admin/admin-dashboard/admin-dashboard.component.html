@@ -1,0 +1,22 @@
+<body>
+    <div class="cont1">
+        <div class="row">
+            <span class="text1">Welcome to Admin Dashboard</span>
+        </div>
+    </div>
+<br><br><br><br>
+  <div class="container">
+    <div *ngFor="let item of userData,let i=index" class="card" style="width: 18rem;">
+        <img src="{{item.src}}" class="card-img-top">  
+        <div class="card-body">
+          <div class="details">
+            <h2 class="card-title">{{item.name}}</h2>
+                <h2>{{item.email}}</h2>
+                <h2>{{item.address}}</h2>               
+          </div> 
+          <button (click)="blockUser(i)" class="btn btn-outline-danger">Block</button> 
+          <button (click)="unblockUser(i)" class="btn btn-outline-success">Unblock</button>
+        </div>
+      </div>
+  </div>
+  </body>

@@ -1,0 +1,82 @@
+<body>
+  <div class="cont1">
+    <div class="row">
+      <span class="text1">Welcome to User Login</span>
+    </div>
+  </div> <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="wrapper">
+        <div class="login">
+          <div class="login-form">
+            <h1 class="login-title"></h1>
+            <div class="form-wrapper">
+              <div class="input-wrapper">
+                <form [formGroup]="register" (ngSubmit)="addUser($event)">
+
+                  <div [ngStyle]="{'display':'none'}">
+                    <label class="label">Id</label>
+                    <input type="text" class="form-control" placeholder="Id" formControlName="id">
+                  </div>
+                  <br>
+                  <div>
+                    <label class="label">Name</label>
+                    <input type="text" class="form-control" placeholder="Name" name="user_name" formControlName='name' required aria-required="true">
+                  </div>
+                  <br>
+                  <div>
+                    <label class="label">Photograph</label>
+                    <input (change)="onFileSelected($event)" type="file" class="form-control"
+                      placeholder="Upload your image">
+                  </div>
+                  <br>
+                  <div>
+                  <label class="label">Email</label>
+                  <input type="email" class="form-control" placeholder="Email" name="user_email"
+                    formControlName="email">
+                </div>
+                <div [ngStyle]="{'display':'none'}" >
+                  <input type="text" name="message" value={{message}}> 
+                </div>
+                <br> 
+                <div> 
+                  <label class="label">Address</label>
+                  <input type="text" class="form-control" placeholder="Address" formControlName="address">
+                </div>
+                <br>
+                <div>
+                  <label class="label">Password</label>
+                  <input type="Password" class="form-control" placeholder="Password" formControlName="password">
+                </div>
+                <br>
+                <div>
+                  <label class="label">Confirm Password</label>
+                  <input type="Password" class="form-control" placeholder="Confirm Password" formControlName="Cpassword">
+                </div>
+                <br>
+                <button type="submit" class="btn action btn-primary" id="btn">Register</button>
+                </form>
+
+                <div id="box" [ngStyle]="{'display': (isClicked==false) ? 'none' : 'block'}">
+                  <div><br>
+                    <h4>Please enter the OTP sent to your Email to verify &#10004;</h4>
+                    <input type="text" placeholder="Enter OTP" [(ngModel)]="inputToken"><br><br> 
+                  </div>
+                  <div [ngStyle]="{'display' : (flag==false)? 'none' : 'block'}">
+                    <h4>Oops Incorrect OTP!! 😣 </h4>
+                  </div>
+
+                  <div class="button"> 
+                    <button (click)="confirm()" class="btn btn-danger">Confirm</button>
+                  </div>  
+                </div><br>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>

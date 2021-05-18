@@ -1,0 +1,52 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.card{
+    margin: 40px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);;
+}
+
+.card img{
+    height: 250px;
+    padding:10px;
+}
+
+.search-bar {
+    width:500px;
+}
+body{
+  background: linear-gradient(to top, #92e3f5 0%, #e7e7e7 100%);
+}
+.container{
+    background-color: #0e4c61;
+    margin-top: 80px;
+    border-radius: 10px; 
+    height: max-content; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+h5,h3{
+    text-align:center;
+    color:rgb(0, 0, 0);
+}
+
+.button-grp {
+    text-align: center;
+}
+
+.info{ 
+    align-items:center;
+}
+
+li{
+    color:rgb(126, 11, 74);
+    
+}
+
+ul{
+    color:rgb(0, 0, 0);
+}
+

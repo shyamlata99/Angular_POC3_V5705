@@ -1,0 +1,20 @@
+<body>
+  <div>
+ <div class="cont1">
+        <div class="row">
+            <span class="text1">Welcome to Admin Login</span>
+        </div>
+    </div>
+      
+      <div class="full-screen-container">
+        <div class="login-container">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" placeholder="email"[(ngModel)]="email"class="form-control">
+          <label for="pass">Password</label>
+          <input type="password"placeholder="password"[(ngModel)]="password"class="form-control">
+          <button type="submit" (click)="adminAuth()" class=" btn-lg btn-danger mt-4">Login</button>
+        </div>
+      </div>
+  </div> 
+   
